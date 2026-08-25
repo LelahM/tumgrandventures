@@ -1,0 +1,113 @@
+{% from "partials/icon.njk" import icon %}
+<!-- Top utility bar -->
+<div class="hidden bg-navy-950 text-slate-300 md:block">
+  <div class="mx-auto flex max-w-8xl items-center justify-between px-6 py-2.5 text-xs lg:px-12">
+    <div class="flex items-center gap-6">
+      <a href="tel:+18135904080" class="flex items-center gap-2 font-medium text-slate-200 hover:text-gold-300 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+        (813) 590-4080
+      </a>
+      <a href="mailto:info@tumgrandventures.com" class="hidden items-center gap-2 hover:text-gold-300 transition-colors lg:flex">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.8 6.15 7.8-6.15a.75.75 0 0 0-.3-.05h-15c-.1 0-.2.02-.3.05Z"/></svg>
+        info@tumgrandventures.com
+      </a>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="text-slate-400">Save up to 45% when you bundle services</span>
+      <a href="/contact/" class="font-semibold text-gold-300 hover:text-gold-200">Get a Free Consultation &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main navigation -->
+<header id="site-header" class="sticky top-0 z-50 border-b border-slate-900/5 bg-white/90 backdrop-blur-md transition-shadow">
+  <nav class="mx-auto flex max-w-8xl items-center justify-between px-6 py-4 lg:px-12" aria-label="Primary">
+    <a href="/" class="flex items-center gap-3">
+      <img src="/img/logo-icon.svg" alt="TUM Grand Venture logo" class="h-11 w-11" width="44" height="44" />
+      <span class="font-display text-lg font-bold leading-tight text-navy-900">
+        TUM Grand<br class="hidden sm:block" /> <span class="text-navy-700">Venture</span>
+      </span>
+    </a>
+
+    <!-- Desktop menu -->
+    <ul class="hidden items-center gap-1 lg:flex">
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li><a href="/about/" class="nav-link">About</a></li>
+      <li class="group relative">
+        <button class="nav-link flex items-center gap-1" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.25a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08Z" clip-rule="evenodd"/></svg>
+        </button>
+        <div class="invisible absolute left-1/2 top-full z-20 w-80 -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+          <div class="mt-2 overflow-hidden rounded-2xl bg-white p-2 shadow-card-hover ring-1 ring-slate-900/5">
+            <a href="/services/" class="dropdown-link">
+              <span class="dropdown-icon">{{ icon("grid") }}</span>
+              <span><span class="block font-semibold text-navy-900">All Services</span><span class="block text-xs text-slate-500">See our full solution overview</span></span>
+            </a>
+            <a href="/business-internet-solutions/" class="dropdown-link">
+              <span class="dropdown-icon">{{ icon("signal") }}</span>
+              <span><span class="block font-semibold text-navy-900">Business Internet Solutions</span><span class="block text-xs text-slate-500">Fiber, EoC, fixed wireless &amp; more</span></span>
+            </a>
+            <a href="/hosted-voip/" class="dropdown-link">
+              <span class="dropdown-icon">{{ icon("phone") }}</span>
+              <span><span class="block font-semibold text-navy-900">Hosted VoIP Solutions</span><span class="block text-xs text-slate-500">Unified communications, anywhere</span></span>
+            </a>
+            <a href="/management-consulting/" class="dropdown-link">
+              <span class="dropdown-icon">{{ icon("briefcase") }}</span>
+              <span><span class="block font-semibold text-navy-900">Management Consulting</span><span class="block text-xs text-slate-500">Carrier-neutral guidance</span></span>
+            </a>
+            <a href="/crm-integration/" class="dropdown-link">
+              <span class="dropdown-icon">{{ icon("sync") }}</span>
+              <span><span class="block font-semibold text-navy-900">CRM Integration</span><span class="block text-xs text-slate-500">Know who's calling, every time</span></span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li><a href="/contact/" class="nav-link">Contact</a></li>
+      <li><a href="/faqs/" class="nav-link">FAQs</a></li>
+    </ul>
+
+    <div class="hidden items-center gap-4 lg:flex">
+      <a href="tel:+18135904080" class="flex items-center gap-2 text-sm font-semibold text-navy-800">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 text-gold-500"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+        (813) 590-4080
+      </a>
+      <a href="/contact/" class="btn bg-navy-900 text-white shadow-soft hover:bg-navy-800 hover:-translate-y-0.5">Get Started Now</a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button id="mobile-menu-btn" class="inline-flex items-center justify-center rounded-lg p-2 text-navy-900 lg:hidden" aria-label="Toggle menu" aria-expanded="false">
+      <svg id="icon-burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="h-7 w-7">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white lg:hidden">
+    <div class="space-y-1 px-6 py-4">
+      <a href="/" class="mobile-link">Home</a>
+      <a href="/about/" class="mobile-link">About</a>
+      <button id="mobile-services-toggle" class="mobile-link flex w-full items-center justify-between" aria-expanded="false">
+        Services
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 transition-transform" id="mobile-services-chevron"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.25a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08Z" clip-rule="evenodd"/></svg>
+      </button>
+      <div id="mobile-services-menu" class="hidden space-y-1 pl-4">
+        <a href="/services/" class="mobile-sublink">All Services</a>
+        <a href="/business-internet-solutions/" class="mobile-sublink">Business Internet Solutions</a>
+        <a href="/hosted-voip/" class="mobile-sublink">Hosted VoIP Solutions</a>
+        <a href="/management-consulting/" class="mobile-sublink">Management Consulting</a>
+        <a href="/crm-integration/" class="mobile-sublink">CRM Integration</a>
+      </div>
+      <a href="/contact/" class="mobile-link">Contact</a>
+      <a href="/faqs/" class="mobile-link">FAQs</a>
+      <div class="mt-4 space-y-3 border-t border-slate-100 pt-4">
+        <a href="tel:+18135904080" class="flex items-center gap-2 text-sm font-semibold text-navy-900">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 text-gold-500"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+          (813) 590-4080
+        </a>
+        <a href="/contact/" class="btn btn-primary block text-center">Get Started Now</a>
+      </div>
+    </div>
+  </div>
+</header>

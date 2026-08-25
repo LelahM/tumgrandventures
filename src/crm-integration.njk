@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: "CRM Integration"
+description: "Know who's calling before you pick up. Integrate with Salesforce, Hubspot, Zoho, Elead, Office 365, Vin Solutions and more."
+---
+{% from "partials/icon.njk" import icon %}
+{% from "partials/cta-banner.njk" import ctaBanner %}
+
+<!-- ===================== HERO ===================== -->
+<section class="relative overflow-hidden bg-navy-950">
+  <div class="pointer-events-none absolute inset-0 bg-dot-grid opacity-20"></div>
+  <div class="pointer-events-none absolute -right-40 top-0 h-[32rem] w-[32rem] rounded-full bg-gold-500/20 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-4xl px-6 py-20 text-center lg:px-12 lg:py-28">
+    <span class="eyebrow-dark animate-fade-up">CRM Integration</span>
+    <h1 class="mt-6 text-3xl font-extrabold leading-tight text-white text-balance sm:text-5xl animate-fade-up [animation-delay:80ms]">
+      Know Who&rsquo;s Calling, Every Time
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up [animation-delay:160ms]">
+      Integrate with Salesforce, Hubspot, Zoho, Elead, Office 365, Vin Solutions and more &mdash; know who&rsquo;s calling before you pick up.
+    </p>
+    <a href="/contact/" class="btn-primary mt-8 inline-flex">
+      Get Started Now
+      {{ icon("arrow-right", "h-4 w-4") }}
+    </a>
+  </div>
+</section>
+
+<!-- ===================== DETAILS ===================== -->
+<section class="section">
+  <div class="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
+    <div class="reveal order-2 lg:order-1">
+      <span class="eyebrow">Seamless Connections</span>
+      <h2 class="mt-5 text-3xl font-bold text-navy-900 sm:text-4xl">Your CRM, connected to every call.</h2>
+      <p class="mt-5 text-lg leading-relaxed text-slate-600">
+        Our integrations sync your phone system with the tools your team already uses, so every conversation has context.
+      </p>
+      <ul class="mt-6 space-y-3">
+        <li class="feature-check">Automatic call logging &amp; screen pops</li>
+        <li class="feature-check">Works with Salesforce, Hubspot, Zoho, Elead, Office 365, Vin Solutions</li>
+        <li class="feature-check">Faster response times, better customer experience</li>
+      </ul>
+    </div>
+    <div class="reveal order-1 lg:order-2 [transition-delay:120ms]">
+      <div class="relative overflow-hidden rounded-3xl shadow-card-hover">
+        <img src="/img/database-concept.webp" alt="CRM database integration concept" class="h-96 w-full object-cover" width="1024" height="683" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ ctaBanner(
+  heading="Ready To Integrate Your CRM?",
+  subheading="Contact Us For A No-Obligation Consultation.",
+  note="Save up to 45% over your existing service providers when you bundle services!",
+  primaryText="CONTACT US NOW",
+  primaryHref="/contact/"
+) }}

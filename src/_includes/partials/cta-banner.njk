@@ -1,0 +1,36 @@
+{% from "partials/icon.njk" import icon %}
+{#
+  Reusable CTA banner.
+  Params: heading, subheading, note, primaryText, primaryHref, secondaryText, secondaryHref
+#}
+{% macro ctaBanner(heading, subheading="", note="", primaryText="GET STARTED NOW", primaryHref="/contact/", secondaryText="", secondaryHref="/contact/") %}
+
+<section class="relative overflow-hidden bg-gradient-to-br from-navy-800 via-navy-900 to-navy-950 py-16 lg:py-20">
+  <div class="pointer-events-none absolute inset-0 bg-grid-pattern bg-[size:40px_40px] opacity-30"></div>
+  <div class="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-gold-400/20 blur-3xl"></div>
+  <div class="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-navy-400/20 blur-3xl"></div>
+
+  <div class="reveal relative mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 text-center lg:flex-row lg:justify-between lg:text-left lg:px-12">
+    <div class="max-w-2xl">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl lg:text-4xl text-balance">{{ heading }}</h2>
+      {% if subheading %}<p class="mt-3 text-lg text-slate-300">{{ subheading }}</p>{% endif %}
+      {% if note %}
+      <p class="mt-4 inline-flex items-center gap-2 rounded-full bg-gold-400/15 px-4 py-2 text-sm font-semibold text-gold-300 ring-1 ring-gold-400/30">
+        {{ icon("bolt", "h-4 w-4") }}
+        {{ note }}
+      </p>
+      {% endif %}
+    </div>
+    <div class="flex flex-none flex-col gap-4 sm:flex-row">
+      <a href="{{ primaryHref | default('/contact/') }}" class="btn-primary">
+        {{ primaryText | default("GET STARTED NOW") }}
+        {{ icon("arrow-right", "h-4 w-4") }}
+      </a>
+      {% if secondaryText %}
+      <a href="{{ secondaryHref | default('/contact/') }}" class="btn-outline">{{ secondaryText }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% endmacro %}

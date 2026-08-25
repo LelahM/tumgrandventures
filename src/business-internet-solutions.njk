@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: "Business Internet Solutions"
+description: "Reliable, dedicated business internet from Fiber, EoC, Coax, Fixed Wireless, Cellular 4G/5G and NEO Satellite — backed by a 99.999% uptime guarantee."
+---
+{% from "partials/icon.njk" import icon %}
+{% from "partials/cta-banner.njk" import ctaBanner %}
+
+<!-- ===================== HERO ===================== -->
+<section class="relative overflow-hidden bg-navy-950">
+  <div class="pointer-events-none absolute inset-0 bg-dot-grid opacity-20"></div>
+  <div class="pointer-events-none absolute -right-40 top-0 h-[32rem] w-[32rem] rounded-full bg-gold-500/20 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-4xl px-6 py-20 text-center lg:px-12 lg:py-28">
+    <span class="eyebrow-dark animate-fade-up">Business Internet Solutions</span>
+    <h1 class="mt-6 text-3xl font-extrabold leading-tight text-white text-balance sm:text-5xl animate-fade-up [animation-delay:80ms]">
+      Dedicated, Reliable Internet For Every Location
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up [animation-delay:160ms]">
+      Fiber, EoC, Coax, Fixed Wireless, Cellular 4G/5G and NEO Satellite &mdash; backed by a 99.999% uptime guarantee and 172+ provider partnerships.
+    </p>
+    <a href="/contact/" class="btn-primary mt-8 inline-flex">
+      Get Started Now
+      {{ icon("arrow-right", "h-4 w-4") }}
+    </a>
+  </div>
+</section>
+
+<!-- ===================== DETAILS ===================== -->
+<section class="section">
+  <div class="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
+    <div class="reveal order-2 lg:order-1">
+      <span class="eyebrow">Why It Matters</span>
+      <h2 class="mt-5 text-3xl font-bold text-navy-900 sm:text-4xl">Hundreds of options, one point of contact.</h2>
+      <p class="mt-5 text-lg leading-relaxed text-slate-600">
+        Many believe there are limited options for internet service providers in their location. There are, in fact, hundreds of options with premium carriers that can save you money and provide dedicated connectivity.
+      </p>
+      <ul class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <li class="feature-check">Exclusive Connections</li>
+        <li class="feature-check">Unneeded Services Removed</li>
+        <li class="feature-check">Proactive Network Monitoring</li>
+        <li class="feature-check">Competitive Costs</li>
+      </ul>
+    </div>
+    <div class="reveal order-1 lg:order-2 [transition-delay:120ms]">
+      <div class="relative overflow-hidden rounded-3xl shadow-card-hover">
+        <img src="/img/light-trails.webp" alt="High-speed business internet network" class="h-96 w-full object-cover" width="1024" height="683" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ ctaBanner(
+  heading="Ready For Faster, More Reliable Internet?",
+  subheading="Contact Us For A No-Obligation Consultation.",
+  note="Save up to 45% over your existing service providers when you bundle services!",
+  primaryText="CONTACT US NOW",
+  primaryHref="/contact/"
+) }}

@@ -1,0 +1,61 @@
+{% from "partials/icon.njk" import icon %}
+{#
+  Reusable lead / contact form.
+  Params: formId (string, optional heading anchor), selected (string, service to preselect), compact (bool)
+#}
+{% macro contactForm(formId="lead", selected="") %}
+
+<form
+  data-lead-form
+  action="https://formspree.io/f/YOUR_FORM_ID"
+  method="POST"
+  class="space-y-5"
+>
+  <input type="hidden" name="_subject" value="New lead from tumgrandventures.com" />
+  <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+    <div>
+      <label for="first-name-{{ formId }}" class="form-label">First Name *</label>
+      <input id="first-name-{{ formId }}" name="first_name" type="text" required autocomplete="given-name" class="form-input" placeholder="First" />
+    </div>
+    <div>
+      <label for="last-name-{{ formId }}" class="form-label">Last Name *</label>
+      <input id="last-name-{{ formId }}" name="last_name" type="text" required autocomplete="family-name" class="form-input" placeholder="Last" />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+    <div>
+      <label for="email-{{ formId }}" class="form-label">Email *</label>
+      <input id="email-{{ formId }}" name="email" type="email" required autocomplete="email" class="form-input" placeholder="you@company.com" />
+    </div>
+    <div>
+      <label for="phone-{{ formId }}" class="form-label">Phone *</label>
+      <input id="phone-{{ formId }}" name="phone" type="tel" required autocomplete="tel" class="form-input" placeholder="(555) 555-5555" />
+    </div>
+  </div>
+
+  <div>
+    <label for="service-{{ formId }}" class="form-label">Select Service *</label>
+    <select id="service-{{ formId }}" name="service" required class="form-input">
+      <option value="" disabled {% if not selected %}selected{% endif %}>Choose a service</option>
+      <option value="Business Internet Solutions" {% if selected == "Business Internet Solutions" %}selected{% endif %}>Business Internet Solutions</option>
+      <option value="Hosted VoIP" {% if selected == "Hosted VoIP" %}selected{% endif %}>Hosted VoiP</option>
+      <option value="Management Consulting" {% if selected == "Management Consulting" %}selected{% endif %}>Management Consulting</option>
+      <option value="CRM Integration" {% if selected == "CRM Integration" %}selected{% endif %}>CRM Integration</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="message-{{ formId }}" class="form-label">Tell us what you are looking for? *</label>
+    <textarea id="message-{{ formId }}" name="message" required rows="4" class="form-input" placeholder="Message"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-full sm:w-auto">
+    Send Request
+    {{ icon("arrow-right", "h-4 w-4") }}
+  </button>
+
+  <p data-form-status role="status" aria-live="polite"></p>
+</form>
+
+{% endmacro %}

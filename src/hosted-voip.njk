@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: "Hosted VoIP Solutions"
+description: "A truly unified communications platform with mobile apps, call center tools, auto attendants, live chat and security — work from anywhere in the world."
+---
+{% from "partials/icon.njk" import icon %}
+{% from "partials/cta-banner.njk" import ctaBanner %}
+
+<!-- ===================== HERO ===================== -->
+<section class="relative overflow-hidden bg-navy-950">
+  <div class="pointer-events-none absolute inset-0 bg-dot-grid opacity-20"></div>
+  <div class="pointer-events-none absolute -right-40 top-0 h-[32rem] w-[32rem] rounded-full bg-gold-500/20 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-4xl px-6 py-20 text-center lg:px-12 lg:py-28">
+    <span class="eyebrow-dark animate-fade-up">Hosted VoIP Solutions</span>
+    <h1 class="mt-6 text-3xl font-extrabold leading-tight text-white text-balance sm:text-5xl animate-fade-up [animation-delay:80ms]">
+      Unified Communications, Anywhere
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up [animation-delay:160ms]">
+      Internal messaging, SMS, video conferencing, and file sharing to facilitate a stronger, more seamless connection between your staff and clients.
+    </p>
+    <a href="/contact/" class="btn-primary mt-8 inline-flex">
+      Get Started Now
+      {{ icon("arrow-right", "h-4 w-4") }}
+    </a>
+  </div>
+</section>
+
+<!-- ===================== DETAILS ===================== -->
+<section class="section">
+  <div class="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
+    <div class="reveal order-2 lg:order-1">
+      <span class="eyebrow">What You Get</span>
+      <h2 class="mt-5 text-3xl font-bold text-navy-900 sm:text-4xl">Work from anywhere in the world.</h2>
+      <p class="mt-5 text-lg leading-relaxed text-slate-600">
+        Connect with your coworkers via means other than the telephone. Our UCaaS platform offers everything your team needs to stay in sync.
+      </p>
+      <ul class="mt-6 space-y-3">
+        <li class="feature-check">Quicker and more effective teamwork</li>
+        <li class="feature-check">Never again send out your personal telephone number</li>
+        <li class="feature-check">Instantaneous email and SMS alert notifications</li>
+        <li class="feature-check">Can integrate with virtually any CRM to boost efficiency</li>
+      </ul>
+    </div>
+    <div class="reveal order-1 lg:order-2 [transition-delay:120ms]">
+      <div class="relative overflow-hidden rounded-3xl shadow-card-hover">
+        <img src="/img/woman-tablet.webp" alt="Business professional using a hosted VoIP app on a tablet" class="h-96 w-full object-cover" width="1024" height="683" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ ctaBanner(
+  heading="Ready To Unify Your Communications?",
+  subheading="Contact Us For A No-Obligation Consultation.",
+  note="Save up to 45% over your existing service providers when you bundle services!",
+  primaryText="CONTACT US NOW",
+  primaryHref="/contact/"
+) }}

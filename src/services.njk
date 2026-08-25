@@ -1,0 +1,96 @@
+---
+layout: base.njk
+title: "Services"
+description: "Explore TUM Grand Venture's full suite of enterprise services: Business Internet Solutions, Hosted VoIP, Management Consulting, and CRM Integration."
+---
+{% from "partials/icon.njk" import icon %}
+{% from "partials/cta-banner.njk" import ctaBanner %}
+
+<!-- ===================== HERO ===================== -->
+<section class="relative overflow-hidden bg-navy-950">
+  <div class="pointer-events-none absolute inset-0 bg-dot-grid opacity-20"></div>
+  <div class="pointer-events-none absolute -left-40 top-0 h-[32rem] w-[32rem] rounded-full bg-navy-500/30 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-3xl px-6 py-20 text-center lg:px-12 lg:py-28">
+    <span class="eyebrow-dark animate-fade-up">Our Services</span>
+    <h1 class="mt-6 text-4xl font-extrabold leading-tight text-white sm:text-5xl animate-fade-up [animation-delay:80ms]">
+      One Partner. Every Communications Solution.
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up [animation-delay:160ms]">
+      From dedicated internet access to hosted phone systems, carrier-neutral consulting, and CRM integrations &mdash; TUM Grand Venture administers all of your IT and telecommunications needs on a single billing platform.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== SERVICE GRID ===================== -->
+<section class="section">
+  <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+    <a href="/business-internet-solutions/" class="reveal card group flex flex-col">
+      <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-50 text-gold-600">{{ icon("signal", "h-7 w-7") }}</span>
+      <h2 class="mt-6 text-2xl font-bold text-navy-900">Business Internet Solutions</h2>
+      <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Reliable, dedicated business internet from Fiber, EoC, Coax, Fixed Wireless, Cellular 4G/5G and NEO Satellite &mdash; backed by a 99.999% uptime guarantee.</p>
+      <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy-700 group-hover:text-gold-600">
+        Explore Business Internet {{ icon("arrow-right", "h-4 w-4") }}
+      </span>
+    </a>
+
+    <a href="/hosted-voip/" class="reveal card group flex flex-col [transition-delay:80ms]">
+      <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-50 text-gold-600">{{ icon("phone", "h-7 w-7") }}</span>
+      <h2 class="mt-6 text-2xl font-bold text-navy-900">Hosted VoIP Solutions</h2>
+      <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">A truly unified communications platform with mobile apps, call center tools, auto attendants, live chat and security &mdash; work from anywhere in the world.</p>
+      <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy-700 group-hover:text-gold-600">
+        Explore Hosted VoIP {{ icon("arrow-right", "h-4 w-4") }}
+      </span>
+    </a>
+
+    <a href="/management-consulting/" class="reveal card group flex flex-col [transition-delay:160ms]">
+      <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-50 text-gold-600">{{ icon("briefcase", "h-7 w-7") }}</span>
+      <h2 class="mt-6 text-2xl font-bold text-navy-900">Management Consulting</h2>
+      <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Carrier-neutral recommendations from a single point of contact &mdash; 172+ provider partnerships means we find exactly the right fit for your business.</p>
+      <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy-700 group-hover:text-gold-600">
+        Explore Management Consulting {{ icon("arrow-right", "h-4 w-4") }}
+      </span>
+    </a>
+
+    <a href="/crm-integration/" class="reveal card group flex flex-col [transition-delay:240ms]">
+      <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-50 text-gold-600">{{ icon("sync", "h-7 w-7") }}</span>
+      <h2 class="mt-6 text-2xl font-bold text-navy-900">CRM Integration</h2>
+      <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Know who&rsquo;s calling before you pick up. Integrate with Salesforce, Hubspot, Zoho, Elead, Office 365, Vin Solutions and more.</p>
+      <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy-700 group-hover:text-gold-600">
+        Explore CRM Integration {{ icon("arrow-right", "h-4 w-4") }}
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ===================== KEY BENEFITS STRIP ===================== -->
+<section class="bg-slate-50">
+  <div class="section !py-16 lg:!py-20">
+    <div class="grid grid-cols-2 gap-8 text-center sm:grid-cols-4">
+      <div class="reveal">
+        <p class="font-display text-3xl font-bold text-navy-900">172+</p>
+        <p class="mt-1 text-xs uppercase tracking-wide text-slate-500">Provider Partnerships</p>
+      </div>
+      <div class="reveal [transition-delay:80ms]">
+        <p class="font-display text-3xl font-bold text-navy-900">45%</p>
+        <p class="mt-1 text-xs uppercase tracking-wide text-slate-500">Avg. Savings When Bundled</p>
+      </div>
+      <div class="reveal [transition-delay:160ms]">
+        <p class="font-display text-3xl font-bold text-navy-900">99.999%</p>
+        <p class="mt-1 text-xs uppercase tracking-wide text-slate-500">Uptime Guarantee</p>
+      </div>
+      <div class="reveal [transition-delay:240ms]">
+        <p class="font-display text-3xl font-bold text-navy-900">100+</p>
+        <p class="mt-1 text-xs uppercase tracking-wide text-slate-500">Years Combined Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ ctaBanner(
+  heading="Get the Best Pricing On Your Communications Services.",
+  subheading="Contact Us For A No-Obligation Consultation.",
+  note="Save up to 45% over your existing service providers when you bundle services!",
+  primaryText="GET STARTED NOW",
+  primaryHref="/contact/"
+) }}

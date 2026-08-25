@@ -1,0 +1,123 @@
+---
+layout: base.njk
+title: "About Us"
+description: "TUM Grand Venture: Revolutionizing Business Telecommunications, One Connection at a Time. Titanium partner with 172+ providers delivering tailor-made, budget-friendly telecom solutions."
+---
+{% from "partials/icon.njk" import icon %}
+{% from "partials/cta-banner.njk" import ctaBanner %}
+
+<!-- ===================== HERO ===================== -->
+<section class="relative overflow-hidden bg-navy-950">
+  <div class="pointer-events-none absolute inset-0 bg-dot-grid opacity-20"></div>
+  <div class="pointer-events-none absolute -right-40 top-0 h-[32rem] w-[32rem] rounded-full bg-gold-500/20 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-4xl px-6 py-20 text-center lg:px-12 lg:py-28">
+    <span class="eyebrow-dark animate-fade-up">Honest &amp; Efficient Work</span>
+    <h1 class="mt-6 text-3xl font-extrabold leading-tight text-white text-balance sm:text-5xl animate-fade-up [animation-delay:80ms]">
+      TUM Grand Venture: Revolutionizing Business Telecommunications, One Connection at a Time!
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up [animation-delay:160ms]">
+      TUM Grand Venture: Elevating Excellence in Telecommunications! Proud Titanium Partners with 172+ Providers, We Deliver Tailor-Made, Budget-Friendly Solutions. Experience Limitless Connectivity, Unbeatable Prices, and Unrivaled Customer Commitment. Your Trust, Our Guarantee!
+    </p>
+  </div>
+</section>
+
+<!-- ===================== WHAT WE DO ===================== -->
+<section class="section">
+  <div class="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
+    <div class="reveal order-2 lg:order-1">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="mt-5 text-3xl font-bold text-navy-900 sm:text-4xl">Enterprise-level telecom, tailored to you.</h2>
+      <p class="mt-5 text-lg leading-relaxed text-slate-600">
+        We specialize in providing enterprise-level telecom products, services, and support at competitive prices. TUM Grand Venture, a nationwide provider of business services, has the appropriate solutions for your company regardless of its location.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-slate-600">
+        If you choose TUM Grand Venture as your IT solutions provider, no project is too big or too minor. Using our portfolio of vendor relationships and development team, we are able to guarantee cost savings regardless of the scale of your enterprise.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-slate-600">
+        We are so confident that we are the best location for you to conduct business that we offer a satisfaction guarantee or your money back &ndash; It&rsquo;s that easy!
+      </p>
+    </div>
+    <div class="reveal order-1 lg:order-2 [transition-delay:120ms]">
+      <div class="relative overflow-hidden rounded-3xl shadow-card-hover">
+        <img src="/img/businessman-phone.webp" alt="TUM Grand Venture support specialist assisting a client by phone" class="h-96 w-full object-cover" width="1024" height="683" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="bg-slate-50">
+  <div class="section !py-20 lg:!py-24">
+    <div class="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
+      <div class="reveal">
+        <div class="relative overflow-hidden rounded-3xl shadow-card-hover">
+          <img src="/img/man-6g.webp" alt="TUM Grand Venture consultant reviewing technology options with a client" class="h-96 w-full object-cover" width="1024" height="683" loading="lazy" />
+        </div>
+      </div>
+      <div class="reveal [transition-delay:120ms]">
+        <span class="eyebrow">How It Works</span>
+        <h2 class="mt-5 text-3xl font-bold text-navy-900 sm:text-4xl">A conversation away from a better solution.</h2>
+        <p class="mt-5 text-lg leading-relaxed text-slate-600">
+          Feel free to engage in a conversation with one of our well-informed sales representatives to identify the solution that aligns perfectly with your business requirements. We&rsquo;re committed to offering you a customized, all-in-one solution for your business needs, allowing you to enjoy cost-effective benefits and peace of mind, knowing that TUM Grand Venture has your business&rsquo;s best interests at heart.
+        </p>
+        <p class="mt-4 text-lg leading-relaxed text-slate-600">
+          Don&rsquo;t hesitate to get in touch with us via phone or email to arrange your complimentary consultation.
+        </p>
+        <a href="/contact/" class="btn-primary mt-8">
+          Contact Us
+          {{ icon("arrow-right", "h-4 w-4") }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SAVE MONEY ===================== -->
+<section class="section">
+  <div class="reveal mx-auto max-w-3xl text-center">
+    <span class="eyebrow">Save Money</span>
+    <h2 class="mt-5 text-3xl font-bold text-navy-900 sm:text-4xl">Premium value, guaranteed.</h2>
+  </div>
+
+  <div class="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
+    <div class="reveal card">
+      <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-50 text-gold-600">{{ icon("phone", "h-6 w-6") }}</span>
+      <h3 class="mt-5 text-lg font-bold text-navy-900">Free Premium Phones*</h3>
+      <p class="mt-2 text-sm leading-relaxed text-slate-600">Premium phones are included free of charge with every order.* In the majority of cases, we can reduce your monthly telecommunications bill and provide you with a fully-featured phone system at no additional cost!</p>
+    </div>
+    <div class="reveal card [transition-delay:80ms]">
+      <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-50 text-gold-600">{{ icon("shield-lock", "h-6 w-6") }}</span>
+      <h3 class="mt-5 text-lg font-bold text-navy-900">5-Year Price Guarantee*</h3>
+      <p class="mt-2 text-sm leading-relaxed text-slate-600">Price guarantees are available for up to five years.* Lock in your rate and plan your budget with total confidence.</p>
+    </div>
+    <div class="reveal card [transition-delay:160ms]">
+      <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-50 text-gold-600">{{ icon("handshake", "h-6 w-6") }}</span>
+      <h3 class="mt-5 text-lg font-bold text-navy-900">Price Match Promise*</h3>
+      <p class="mt-2 text-sm leading-relaxed text-slate-600">At TUM Grand Venture, we take pride in being the most advantageous solution for your business&rsquo;s telecommunications requirements. If we are not the lowest-priced provider, we will meet or beat their price! Simply provide an identical, verifiable quote from a competitor, and we will honor our commitment to being the best business partner for all of your needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OUR HISTORY ===================== -->
+<section class="relative overflow-hidden bg-navy-900">
+  <img src="/img/quality-control.webp" alt="" class="absolute inset-0 h-full w-full object-cover opacity-15" loading="lazy" />
+  <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-900/95 to-navy-900/85"></div>
+  <div class="reveal relative mx-auto max-w-4xl px-6 py-20 text-center lg:px-12 lg:py-28">
+    <span class="eyebrow-dark">Our History</span>
+    <h2 class="mt-5 text-3xl font-bold text-white sm:text-4xl">100+ years of combined telecom expertise.</h2>
+    <p class="mt-6 text-lg leading-relaxed text-slate-300">
+      With over 100 years of combined experience in telecommunications, our Executive team has been assisting customers just like you in acquiring the solutions and knowledge necessary to operate your business efficiently and effectively.
+    </p>
+    <p class="mt-4 text-lg leading-relaxed text-slate-300">
+      TUM Grand Venture&rsquo;s titanium status with partners such as ATT, 3CX, Frontier, Verizon, and Spectrum, to name a few, means that you can trust the company to meet all of your most complex IT-related needs.
+    </p>
+  </div>
+</section>
+
+{{ ctaBanner(
+  heading="Interested in Learning More?",
+  subheading="We're easy to connect with.",
+  primaryText="CONTACT US",
+  primaryHref="/contact/"
+) }}

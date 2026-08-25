@@ -1,0 +1,68 @@
+---
+layout: base.njk
+title: "Contact Us"
+description: "Get in touch with TUM Grand Venture for a no-obligation consultation on business internet, hosted VoIP, disaster recovery, CRM integration, and management consulting."
+---
+{% from "partials/icon.njk" import icon %}
+{% from "partials/contact-form.njk" import contactForm %}
+
+<!-- ===================== HERO ===================== -->
+<section class="relative overflow-hidden bg-navy-950">
+  <div class="pointer-events-none absolute inset-0 bg-dot-grid opacity-20"></div>
+  <div class="pointer-events-none absolute -right-40 top-0 h-[32rem] w-[32rem] rounded-full bg-gold-500/20 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-4xl px-6 py-20 text-center lg:px-12 lg:py-28">
+    <span class="eyebrow-dark animate-fade-up">Let's Talk</span>
+    <h1 class="mt-6 text-3xl font-extrabold leading-tight text-white text-balance sm:text-5xl animate-fade-up [animation-delay:80ms]">
+      Get Your Free, No-Obligation Consultation
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 animate-fade-up [animation-delay:160ms]">
+      Tell us about your business and one of our specialists will reach out with a tailor-made, budget-friendly solution.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== CONTACT GRID ===================== -->
+<section class="section">
+  <div class="grid grid-cols-1 gap-14 lg:grid-cols-5">
+    <div class="reveal lg:col-span-2">
+      <span class="eyebrow">Contact Info</span>
+      <h2 class="mt-5 text-3xl font-bold text-navy-900">We&rsquo;d love to hear from you.</h2>
+      <p class="mt-5 text-lg leading-relaxed text-slate-600">
+        Reach out by phone, email, or the form and a TUM Grand Venture consultant will follow up promptly.
+      </p>
+
+      <ul class="mt-8 divide-y divide-slate-100 rounded-2xl border border-slate-100 bg-white shadow-soft">
+        <li class="flex items-center gap-4 p-5">
+          <span class="flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-gold-50 text-gold-600">{{ icon("phone", "h-4 w-4") }}</span>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Phone</p>
+            <a href="tel:+18135904080" class="block truncate font-semibold text-navy-900 hover:text-gold-600">(813) 590-4080</a>
+          </div>
+        </li>
+        <li class="flex items-center gap-4 p-5">
+          <span class="flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-gold-50 text-gold-600">{{ icon("chat", "h-4 w-4") }}</span>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Email</p>
+            <a href="mailto:info@tumgrandventures.com" class="block truncate font-semibold text-navy-900 hover:text-gold-600">info@tumgrandventures.com</a>
+          </div>
+        </li>
+        <li class="flex items-center gap-4 p-5">
+          <span class="flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-gold-50 text-gold-600">{{ icon("globe", "h-4 w-4") }}</span>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Location</p>
+            <p class="font-semibold leading-snug text-navy-900">8875 Hidden River Parkway, Suite 300, Tampa, Florida, 33637</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="reveal card lg:col-span-3 [transition-delay:80ms]">
+      <h2 class="text-2xl font-bold text-navy-900">Send Us A Message</h2>
+      <p class="mt-2 text-sm text-slate-500">Fields marked * are required.</p>
+      <div class="mt-6">
+        {{ contactForm(formId="contact-page") }}
+      </div>
+    </div>
+  </div>
+</section>
